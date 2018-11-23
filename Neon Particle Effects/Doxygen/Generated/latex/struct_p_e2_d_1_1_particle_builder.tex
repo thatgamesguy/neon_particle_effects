@@ -1,0 +1,122 @@
+\hypertarget{struct_p_e2_d_1_1_particle_builder}{}\section{P\+E2\+D.\+Particle\+Builder Struct Reference}
+\label{struct_p_e2_d_1_1_particle_builder}\index{P\+E2\+D.\+Particle\+Builder@{P\+E2\+D.\+Particle\+Builder}}
+
+
+Holds the particle state. Passed to the \hyperlink{class_p_e2_d_1_1_particle_factory}{Particle\+Factory} to build particles.  
+
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector2 \hyperlink{struct_p_e2_d_1_1_particle_builder_a5efd39fc998887c16fa23eff2fdf8d4d}{velocity}
+\begin{DoxyCompactList}\small\item\em Initial velocity of particle. \end{DoxyCompactList}\item 
+\hyperlink{namespace_p_e2_d_a510b407ed8d0de3476df258ab95e1e50}{Wrap\+Around\+Type} \hyperlink{struct_p_e2_d_1_1_particle_builder_ae8a54269a26406d7fb499c4fee198ea2}{wrap\+Around\+Type}
+\begin{DoxyCompactList}\small\item\em Screen constraint type. \end{DoxyCompactList}\item 
+float \hyperlink{struct_p_e2_d_1_1_particle_builder_a3079f1fec16ed4f3b83def7200345569}{length\+Multiplier}
+\begin{DoxyCompactList}\small\item\em The particles scale is multipled by this. \end{DoxyCompactList}\item 
+float \hyperlink{struct_p_e2_d_1_1_particle_builder_aff988495a250de55e362b008dc471f9d}{velocity\+Damp\+Modifier}
+\begin{DoxyCompactList}\small\item\em The percentage amount that a particles velocity remains each timestep. \end{DoxyCompactList}\item 
+bool \hyperlink{struct_p_e2_d_1_1_particle_builder_aa78452c0a3ec79744b768d945b1d6ae9}{ignore\+Effectors}
+\begin{DoxyCompactList}\small\item\em If enables, the particle built with this state will ignore effectors. \end{DoxyCompactList}\item 
+float \hyperlink{struct_p_e2_d_1_1_particle_builder_aff3a3bd2b886093998811a30e7a906fd}{min\+Length\+Clamp}
+\begin{DoxyCompactList}\small\item\em Clamp the minimum length of a particles sprite. \end{DoxyCompactList}\item 
+float \hyperlink{struct_p_e2_d_1_1_particle_builder_a80efc62ef75c9a7c127caa527e7c83ca}{max\+Length\+Clamp}
+\begin{DoxyCompactList}\small\item\em Clamp the maximum length of a particles sprite. \end{DoxyCompactList}\item 
+bool \hyperlink{struct_p_e2_d_1_1_particle_builder_a2c37b78b4c75113fb9703c760cd1a34c}{remove\+When\+Velocity\+Reaches\+Threshold}
+\begin{DoxyCompactList}\small\item\em Will remove a particle if velocity reaches a threshold. \end{DoxyCompactList}\item 
+float \hyperlink{struct_p_e2_d_1_1_particle_builder_a5feb3a73d241bbf14bd2a51ec94835b2}{custom\+Velocity\+Threshold}
+\begin{DoxyCompactList}\small\item\em The velocity at which a particle will be removed, only used if \hyperlink{struct_p_e2_d_1_1_particle_builder_a2c37b78b4c75113fb9703c760cd1a34c}{remove\+When\+Velocity\+Reaches\+Threshold} = true. \end{DoxyCompactList}\item 
+bool \hyperlink{struct_p_e2_d_1_1_particle_builder_a18a773bd0ec19ac1eeb2e86603bd3395}{remove\+When\+Alpha\+Reaches\+Threshold}
+\begin{DoxyCompactList}\small\item\em Will remove the particle when its alpha reaches a specified threshold. \end{DoxyCompactList}\item 
+float \hyperlink{struct_p_e2_d_1_1_particle_builder_a4f81feb8debd8a2842d2d1b49fa842e2}{custom\+Alpha\+Threshold}
+\begin{DoxyCompactList}\small\item\em The particles sprites alpha threshold at which a particle will be removed, only used if \hyperlink{struct_p_e2_d_1_1_particle_builder_a18a773bd0ec19ac1eeb2e86603bd3395}{remove\+When\+Alpha\+Reaches\+Threshold} = true. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds the particle state. Passed to the \hyperlink{class_p_e2_d_1_1_particle_factory}{Particle\+Factory} to build particles. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_p_e2_d_1_1_particle_builder_a4f81feb8debd8a2842d2d1b49fa842e2}{}\index{P\+E2\+D\+::\+Particle\+Builder@{P\+E2\+D\+::\+Particle\+Builder}!custom\+Alpha\+Threshold@{custom\+Alpha\+Threshold}}
+\index{custom\+Alpha\+Threshold@{custom\+Alpha\+Threshold}!P\+E2\+D\+::\+Particle\+Builder@{P\+E2\+D\+::\+Particle\+Builder}}
+\subsubsection[{custom\+Alpha\+Threshold}]{\setlength{\rightskip}{0pt plus 5cm}float P\+E2\+D.\+Particle\+Builder.\+custom\+Alpha\+Threshold}\label{struct_p_e2_d_1_1_particle_builder_a4f81feb8debd8a2842d2d1b49fa842e2}
+
+
+The particles sprites alpha threshold at which a particle will be removed, only used if \hyperlink{struct_p_e2_d_1_1_particle_builder_a18a773bd0ec19ac1eeb2e86603bd3395}{remove\+When\+Alpha\+Reaches\+Threshold} = true. 
+
+\hypertarget{struct_p_e2_d_1_1_particle_builder_a5feb3a73d241bbf14bd2a51ec94835b2}{}\index{P\+E2\+D\+::\+Particle\+Builder@{P\+E2\+D\+::\+Particle\+Builder}!custom\+Velocity\+Threshold@{custom\+Velocity\+Threshold}}
+\index{custom\+Velocity\+Threshold@{custom\+Velocity\+Threshold}!P\+E2\+D\+::\+Particle\+Builder@{P\+E2\+D\+::\+Particle\+Builder}}
+\subsubsection[{custom\+Velocity\+Threshold}]{\setlength{\rightskip}{0pt plus 5cm}float P\+E2\+D.\+Particle\+Builder.\+custom\+Velocity\+Threshold}\label{struct_p_e2_d_1_1_particle_builder_a5feb3a73d241bbf14bd2a51ec94835b2}
+
+
+The velocity at which a particle will be removed, only used if \hyperlink{struct_p_e2_d_1_1_particle_builder_a2c37b78b4c75113fb9703c760cd1a34c}{remove\+When\+Velocity\+Reaches\+Threshold} = true. 
+
+\hypertarget{struct_p_e2_d_1_1_particle_builder_aa78452c0a3ec79744b768d945b1d6ae9}{}\index{P\+E2\+D\+::\+Particle\+Builder@{P\+E2\+D\+::\+Particle\+Builder}!ignore\+Effectors@{ignore\+Effectors}}
+\index{ignore\+Effectors@{ignore\+Effectors}!P\+E2\+D\+::\+Particle\+Builder@{P\+E2\+D\+::\+Particle\+Builder}}
+\subsubsection[{ignore\+Effectors}]{\setlength{\rightskip}{0pt plus 5cm}bool P\+E2\+D.\+Particle\+Builder.\+ignore\+Effectors}\label{struct_p_e2_d_1_1_particle_builder_aa78452c0a3ec79744b768d945b1d6ae9}
+
+
+If enables, the particle built with this state will ignore effectors. 
+
+\hypertarget{struct_p_e2_d_1_1_particle_builder_a3079f1fec16ed4f3b83def7200345569}{}\index{P\+E2\+D\+::\+Particle\+Builder@{P\+E2\+D\+::\+Particle\+Builder}!length\+Multiplier@{length\+Multiplier}}
+\index{length\+Multiplier@{length\+Multiplier}!P\+E2\+D\+::\+Particle\+Builder@{P\+E2\+D\+::\+Particle\+Builder}}
+\subsubsection[{length\+Multiplier}]{\setlength{\rightskip}{0pt plus 5cm}float P\+E2\+D.\+Particle\+Builder.\+length\+Multiplier}\label{struct_p_e2_d_1_1_particle_builder_a3079f1fec16ed4f3b83def7200345569}
+
+
+The particles scale is multipled by this. 
+
+\hypertarget{struct_p_e2_d_1_1_particle_builder_a80efc62ef75c9a7c127caa527e7c83ca}{}\index{P\+E2\+D\+::\+Particle\+Builder@{P\+E2\+D\+::\+Particle\+Builder}!max\+Length\+Clamp@{max\+Length\+Clamp}}
+\index{max\+Length\+Clamp@{max\+Length\+Clamp}!P\+E2\+D\+::\+Particle\+Builder@{P\+E2\+D\+::\+Particle\+Builder}}
+\subsubsection[{max\+Length\+Clamp}]{\setlength{\rightskip}{0pt plus 5cm}float P\+E2\+D.\+Particle\+Builder.\+max\+Length\+Clamp}\label{struct_p_e2_d_1_1_particle_builder_a80efc62ef75c9a7c127caa527e7c83ca}
+
+
+Clamp the maximum length of a particles sprite. 
+
+\hypertarget{struct_p_e2_d_1_1_particle_builder_aff3a3bd2b886093998811a30e7a906fd}{}\index{P\+E2\+D\+::\+Particle\+Builder@{P\+E2\+D\+::\+Particle\+Builder}!min\+Length\+Clamp@{min\+Length\+Clamp}}
+\index{min\+Length\+Clamp@{min\+Length\+Clamp}!P\+E2\+D\+::\+Particle\+Builder@{P\+E2\+D\+::\+Particle\+Builder}}
+\subsubsection[{min\+Length\+Clamp}]{\setlength{\rightskip}{0pt plus 5cm}float P\+E2\+D.\+Particle\+Builder.\+min\+Length\+Clamp}\label{struct_p_e2_d_1_1_particle_builder_aff3a3bd2b886093998811a30e7a906fd}
+
+
+Clamp the minimum length of a particles sprite. 
+
+\hypertarget{struct_p_e2_d_1_1_particle_builder_a18a773bd0ec19ac1eeb2e86603bd3395}{}\index{P\+E2\+D\+::\+Particle\+Builder@{P\+E2\+D\+::\+Particle\+Builder}!remove\+When\+Alpha\+Reaches\+Threshold@{remove\+When\+Alpha\+Reaches\+Threshold}}
+\index{remove\+When\+Alpha\+Reaches\+Threshold@{remove\+When\+Alpha\+Reaches\+Threshold}!P\+E2\+D\+::\+Particle\+Builder@{P\+E2\+D\+::\+Particle\+Builder}}
+\subsubsection[{remove\+When\+Alpha\+Reaches\+Threshold}]{\setlength{\rightskip}{0pt plus 5cm}bool P\+E2\+D.\+Particle\+Builder.\+remove\+When\+Alpha\+Reaches\+Threshold}\label{struct_p_e2_d_1_1_particle_builder_a18a773bd0ec19ac1eeb2e86603bd3395}
+
+
+Will remove the particle when its alpha reaches a specified threshold. 
+
+\hypertarget{struct_p_e2_d_1_1_particle_builder_a2c37b78b4c75113fb9703c760cd1a34c}{}\index{P\+E2\+D\+::\+Particle\+Builder@{P\+E2\+D\+::\+Particle\+Builder}!remove\+When\+Velocity\+Reaches\+Threshold@{remove\+When\+Velocity\+Reaches\+Threshold}}
+\index{remove\+When\+Velocity\+Reaches\+Threshold@{remove\+When\+Velocity\+Reaches\+Threshold}!P\+E2\+D\+::\+Particle\+Builder@{P\+E2\+D\+::\+Particle\+Builder}}
+\subsubsection[{remove\+When\+Velocity\+Reaches\+Threshold}]{\setlength{\rightskip}{0pt plus 5cm}bool P\+E2\+D.\+Particle\+Builder.\+remove\+When\+Velocity\+Reaches\+Threshold}\label{struct_p_e2_d_1_1_particle_builder_a2c37b78b4c75113fb9703c760cd1a34c}
+
+
+Will remove a particle if velocity reaches a threshold. 
+
+\hypertarget{struct_p_e2_d_1_1_particle_builder_a5efd39fc998887c16fa23eff2fdf8d4d}{}\index{P\+E2\+D\+::\+Particle\+Builder@{P\+E2\+D\+::\+Particle\+Builder}!velocity@{velocity}}
+\index{velocity@{velocity}!P\+E2\+D\+::\+Particle\+Builder@{P\+E2\+D\+::\+Particle\+Builder}}
+\subsubsection[{velocity}]{\setlength{\rightskip}{0pt plus 5cm}Vector2 P\+E2\+D.\+Particle\+Builder.\+velocity}\label{struct_p_e2_d_1_1_particle_builder_a5efd39fc998887c16fa23eff2fdf8d4d}
+
+
+Initial velocity of particle. 
+
+\hypertarget{struct_p_e2_d_1_1_particle_builder_aff988495a250de55e362b008dc471f9d}{}\index{P\+E2\+D\+::\+Particle\+Builder@{P\+E2\+D\+::\+Particle\+Builder}!velocity\+Damp\+Modifier@{velocity\+Damp\+Modifier}}
+\index{velocity\+Damp\+Modifier@{velocity\+Damp\+Modifier}!P\+E2\+D\+::\+Particle\+Builder@{P\+E2\+D\+::\+Particle\+Builder}}
+\subsubsection[{velocity\+Damp\+Modifier}]{\setlength{\rightskip}{0pt plus 5cm}float P\+E2\+D.\+Particle\+Builder.\+velocity\+Damp\+Modifier}\label{struct_p_e2_d_1_1_particle_builder_aff988495a250de55e362b008dc471f9d}
+
+
+The percentage amount that a particles velocity remains each timestep. 
+
+\hypertarget{struct_p_e2_d_1_1_particle_builder_ae8a54269a26406d7fb499c4fee198ea2}{}\index{P\+E2\+D\+::\+Particle\+Builder@{P\+E2\+D\+::\+Particle\+Builder}!wrap\+Around\+Type@{wrap\+Around\+Type}}
+\index{wrap\+Around\+Type@{wrap\+Around\+Type}!P\+E2\+D\+::\+Particle\+Builder@{P\+E2\+D\+::\+Particle\+Builder}}
+\subsubsection[{wrap\+Around\+Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Wrap\+Around\+Type} P\+E2\+D.\+Particle\+Builder.\+wrap\+Around\+Type}\label{struct_p_e2_d_1_1_particle_builder_ae8a54269a26406d7fb499c4fee198ea2}
+
+
+Screen constraint type. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/robert/\+Dropbox/\+Work/\+Unity/\+Particle Effects 2\+D/\+Assets/\+P\+E2\+D/\+Scripts/\+Particles/Particle\+Builder.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,108 @@
+\hypertarget{class_p_e2_d_1_1_custom_particle}{}\section{P\+E2\+D.\+Custom\+Particle Class Reference}
+\label{class_p_e2_d_1_1_custom_particle}\index{P\+E2\+D.\+Custom\+Particle@{P\+E2\+D.\+Custom\+Particle}}
+
+
+Main workhorse for the custom particles. Updates particles state (colour, position, velocity etc), handles interaction with effectors, and applys any screen constraints.  
+
+
+Inheritance diagram for P\+E2\+D.\+Custom\+Particle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_p_e2_d_1_1_custom_particle}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_p_e2_d_1_1_custom_particle_aa49ae6d77d9160f453efa3826da35564}{Update\+Effector\+List} ()
+\begin{DoxyCompactList}\small\item\em Finds all effectors in scene. Static reference should only be called once for all particles on effector change. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_p_e2_d_1_1_custom_particle_ad82465196a455ef29ff5c8e8c528c9b8}{should\+Update\+Alpha} = true
+\begin{DoxyCompactList}\small\item\em Update sprites alpha based on velovity. \end{DoxyCompactList}\item 
+bool \hyperlink{class_p_e2_d_1_1_custom_particle_a13a2f64584e65a38d7ec7b27f1d3fcd2}{should\+Update\+Scale} = true
+\begin{DoxyCompactList}\small\item\em Update sprites scale based on velicoty. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_p_e2_d_1_1_particle_builder}{Particle\+Builder} \hyperlink{class_p_e2_d_1_1_custom_particle_a70eb3430c0338b4c69e7f90206814e08}{state}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Set the state of the particles. Also resets particles properties. \end{DoxyCompactList}\item 
+float \hyperlink{class_p_e2_d_1_1_custom_particle_abb3aec5eef9b58cf98c6000da1ad732e}{duration}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Maximum duration of particles life. Life may be shorter dependent on velocity. \end{DoxyCompactList}\item 
+float \hyperlink{class_p_e2_d_1_1_custom_particle_ab8a4cc9c8de193c92fecb50634358823}{percent\+Life}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Range (0, 1). 0 = time to remove from scene, 1 = just spawned. \end{DoxyCompactList}\item 
+Sprite\+Renderer \hyperlink{class_p_e2_d_1_1_custom_particle_a6a116a174bdc1007d31528712f19aa7f}{sprite\+Renderer}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the sprite renderer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main workhorse for the custom particles. Updates particles state (colour, position, velocity etc), handles interaction with effectors, and applys any screen constraints. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_p_e2_d_1_1_custom_particle_aa49ae6d77d9160f453efa3826da35564}{}\index{P\+E2\+D\+::\+Custom\+Particle@{P\+E2\+D\+::\+Custom\+Particle}!Update\+Effector\+List@{Update\+Effector\+List}}
+\index{Update\+Effector\+List@{Update\+Effector\+List}!P\+E2\+D\+::\+Custom\+Particle@{P\+E2\+D\+::\+Custom\+Particle}}
+\subsubsection[{Update\+Effector\+List()}]{\setlength{\rightskip}{0pt plus 5cm}static void P\+E2\+D.\+Custom\+Particle.\+Update\+Effector\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_p_e2_d_1_1_custom_particle_aa49ae6d77d9160f453efa3826da35564}
+
+
+Finds all effectors in scene. Static reference should only be called once for all particles on effector change. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_p_e2_d_1_1_custom_particle_ad82465196a455ef29ff5c8e8c528c9b8}{}\index{P\+E2\+D\+::\+Custom\+Particle@{P\+E2\+D\+::\+Custom\+Particle}!should\+Update\+Alpha@{should\+Update\+Alpha}}
+\index{should\+Update\+Alpha@{should\+Update\+Alpha}!P\+E2\+D\+::\+Custom\+Particle@{P\+E2\+D\+::\+Custom\+Particle}}
+\subsubsection[{should\+Update\+Alpha}]{\setlength{\rightskip}{0pt plus 5cm}bool P\+E2\+D.\+Custom\+Particle.\+should\+Update\+Alpha = true}\label{class_p_e2_d_1_1_custom_particle_ad82465196a455ef29ff5c8e8c528c9b8}
+
+
+Update sprites alpha based on velovity. 
+
+\hypertarget{class_p_e2_d_1_1_custom_particle_a13a2f64584e65a38d7ec7b27f1d3fcd2}{}\index{P\+E2\+D\+::\+Custom\+Particle@{P\+E2\+D\+::\+Custom\+Particle}!should\+Update\+Scale@{should\+Update\+Scale}}
+\index{should\+Update\+Scale@{should\+Update\+Scale}!P\+E2\+D\+::\+Custom\+Particle@{P\+E2\+D\+::\+Custom\+Particle}}
+\subsubsection[{should\+Update\+Scale}]{\setlength{\rightskip}{0pt plus 5cm}bool P\+E2\+D.\+Custom\+Particle.\+should\+Update\+Scale = true}\label{class_p_e2_d_1_1_custom_particle_a13a2f64584e65a38d7ec7b27f1d3fcd2}
+
+
+Update sprites scale based on velicoty. 
+
+
+
+\subsection{Property Documentation}
+\hypertarget{class_p_e2_d_1_1_custom_particle_abb3aec5eef9b58cf98c6000da1ad732e}{}\index{P\+E2\+D\+::\+Custom\+Particle@{P\+E2\+D\+::\+Custom\+Particle}!duration@{duration}}
+\index{duration@{duration}!P\+E2\+D\+::\+Custom\+Particle@{P\+E2\+D\+::\+Custom\+Particle}}
+\subsubsection[{duration}]{\setlength{\rightskip}{0pt plus 5cm}float P\+E2\+D.\+Custom\+Particle.\+duration\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_p_e2_d_1_1_custom_particle_abb3aec5eef9b58cf98c6000da1ad732e}
+
+
+Maximum duration of particles life. Life may be shorter dependent on velocity. 
+
+The duration.\hypertarget{class_p_e2_d_1_1_custom_particle_ab8a4cc9c8de193c92fecb50634358823}{}\index{P\+E2\+D\+::\+Custom\+Particle@{P\+E2\+D\+::\+Custom\+Particle}!percent\+Life@{percent\+Life}}
+\index{percent\+Life@{percent\+Life}!P\+E2\+D\+::\+Custom\+Particle@{P\+E2\+D\+::\+Custom\+Particle}}
+\subsubsection[{percent\+Life}]{\setlength{\rightskip}{0pt plus 5cm}float P\+E2\+D.\+Custom\+Particle.\+percent\+Life\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_p_e2_d_1_1_custom_particle_ab8a4cc9c8de193c92fecb50634358823}
+
+
+Range (0, 1). 0 = time to remove from scene, 1 = just spawned. 
+
+The percent life.\hypertarget{class_p_e2_d_1_1_custom_particle_a6a116a174bdc1007d31528712f19aa7f}{}\index{P\+E2\+D\+::\+Custom\+Particle@{P\+E2\+D\+::\+Custom\+Particle}!sprite\+Renderer@{sprite\+Renderer}}
+\index{sprite\+Renderer@{sprite\+Renderer}!P\+E2\+D\+::\+Custom\+Particle@{P\+E2\+D\+::\+Custom\+Particle}}
+\subsubsection[{sprite\+Renderer}]{\setlength{\rightskip}{0pt plus 5cm}Sprite\+Renderer P\+E2\+D.\+Custom\+Particle.\+sprite\+Renderer\hspace{0.3cm}{\ttfamily [get]}}\label{class_p_e2_d_1_1_custom_particle_a6a116a174bdc1007d31528712f19aa7f}
+
+
+Gets the sprite renderer. 
+
+The sprite renderer.\hypertarget{class_p_e2_d_1_1_custom_particle_a70eb3430c0338b4c69e7f90206814e08}{}\index{P\+E2\+D\+::\+Custom\+Particle@{P\+E2\+D\+::\+Custom\+Particle}!state@{state}}
+\index{state@{state}!P\+E2\+D\+::\+Custom\+Particle@{P\+E2\+D\+::\+Custom\+Particle}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Particle\+Builder} P\+E2\+D.\+Custom\+Particle.\+state\hspace{0.3cm}{\ttfamily [set]}}\label{class_p_e2_d_1_1_custom_particle_a70eb3430c0338b4c69e7f90206814e08}
+
+
+Set the state of the particles. Also resets particles properties. 
+
+The state.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/robert/\+Dropbox/\+Work/\+Unity/\+Particle Effects 2\+D/\+Assets/\+P\+E2\+D/\+Scripts/\+Particles/Custom\+Particle.\+cs\end{DoxyCompactItemize}

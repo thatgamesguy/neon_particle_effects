@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: e4e84997cc4ec423e811380546685ac4
+labels:
+- Emitter
+- Particles
+- Neon
+- Line
+- Random
+- Direction
+timeCreated: 1441816517
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

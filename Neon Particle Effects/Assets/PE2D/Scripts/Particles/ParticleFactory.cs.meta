@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 6100451cd4cfd4fa0984e63a95758848
+labels:
+- Effect
+- Particle
+- Particles
+- Neon
+- ParticleCreator
+- ParticleFactory
+- Factory
+timeCreated: 1439453257
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

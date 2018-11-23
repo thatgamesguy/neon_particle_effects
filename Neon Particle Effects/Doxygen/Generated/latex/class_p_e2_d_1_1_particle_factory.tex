@@ -1,0 +1,111 @@
+\hypertarget{class_p_e2_d_1_1_particle_factory}{}\section{P\+E2\+D.\+Particle\+Factory Class Reference}
+\label{class_p_e2_d_1_1_particle_factory}\index{P\+E2\+D.\+Particle\+Factory@{P\+E2\+D.\+Particle\+Factory}}
+
+
+Creates and maintain an object pool of particles.  
+
+
+Inheritance diagram for P\+E2\+D.\+Particle\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_p_e2_d_1_1_particle_factory}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_p_e2_d_1_1_particle_factory_a5d0fd6f0ecf11f2545ff889e02eaf09a}{Create\+Particle} (Vector2 position, Color colour, float duration, Vector2 initial\+Scale, \hyperlink{struct_p_e2_d_1_1_particle_builder}{Particle\+Builder} state)
+\begin{DoxyCompactList}\small\item\em Creates a particle at position with the specified state. \end{DoxyCompactList}\item 
+void \hyperlink{class_p_e2_d_1_1_particle_factory_a6d8498b66145f0035b9346118aad9150}{Remove\+All\+Active\+Particles} ()
+\begin{DoxyCompactList}\small\item\em Sets all enabled particles to be removed in the next time step. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \hyperlink{class_p_e2_d_1_1_particle_factory_a7431706eb3ca0363ebfa1936384fa8ca}{particle\+Prefab}
+\begin{DoxyCompactList}\small\item\em Particle prefab. \end{DoxyCompactList}\item 
+int \hyperlink{class_p_e2_d_1_1_particle_factory_a7a8905551b65537a74461cddeaaac5d3}{max\+Particle\+Count}
+\begin{DoxyCompactList}\small\item\em The max particle count. This number of particles is created at runtime and placed in a finite pool. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_p_e2_d_1_1_particle_factory}{Particle\+Factory} \hyperlink{class_p_e2_d_1_1_particle_factory_a5ee02796828431320c6f8a70a8456feb}{instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the instance of this class. Can be called from any script. Only one instance of a particle factory can exist in one scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Creates and maintain an object pool of particles. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_p_e2_d_1_1_particle_factory_a5d0fd6f0ecf11f2545ff889e02eaf09a}{}\index{P\+E2\+D\+::\+Particle\+Factory@{P\+E2\+D\+::\+Particle\+Factory}!Create\+Particle@{Create\+Particle}}
+\index{Create\+Particle@{Create\+Particle}!P\+E2\+D\+::\+Particle\+Factory@{P\+E2\+D\+::\+Particle\+Factory}}
+\subsubsection[{Create\+Particle(\+Vector2 position, Color colour, float duration, Vector2 initial\+Scale, Particle\+Builder state)}]{\setlength{\rightskip}{0pt plus 5cm}void P\+E2\+D.\+Particle\+Factory.\+Create\+Particle (
+\begin{DoxyParamCaption}
+\item[{Vector2}]{position, }
+\item[{Color}]{colour, }
+\item[{float}]{duration, }
+\item[{Vector2}]{initial\+Scale, }
+\item[{{\bf Particle\+Builder}}]{state}
+\end{DoxyParamCaption}
+)}\label{class_p_e2_d_1_1_particle_factory_a5d0fd6f0ecf11f2545ff889e02eaf09a}
+
+
+Creates a particle at position with the specified state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Initial position of particle.\\
+\hline
+{\em tint} & The initial colour of particle.\\
+\hline
+{\em duration} & The maximum duration of particle.\\
+\hline
+{\em scale} & Initial scale of particle.\\
+\hline
+{\em state} & T\+He particle state.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_p_e2_d_1_1_particle_factory_a6d8498b66145f0035b9346118aad9150}{}\index{P\+E2\+D\+::\+Particle\+Factory@{P\+E2\+D\+::\+Particle\+Factory}!Remove\+All\+Active\+Particles@{Remove\+All\+Active\+Particles}}
+\index{Remove\+All\+Active\+Particles@{Remove\+All\+Active\+Particles}!P\+E2\+D\+::\+Particle\+Factory@{P\+E2\+D\+::\+Particle\+Factory}}
+\subsubsection[{Remove\+All\+Active\+Particles()}]{\setlength{\rightskip}{0pt plus 5cm}void P\+E2\+D.\+Particle\+Factory.\+Remove\+All\+Active\+Particles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_e2_d_1_1_particle_factory_a6d8498b66145f0035b9346118aad9150}
+
+
+Sets all enabled particles to be removed in the next time step. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_p_e2_d_1_1_particle_factory_a7a8905551b65537a74461cddeaaac5d3}{}\index{P\+E2\+D\+::\+Particle\+Factory@{P\+E2\+D\+::\+Particle\+Factory}!max\+Particle\+Count@{max\+Particle\+Count}}
+\index{max\+Particle\+Count@{max\+Particle\+Count}!P\+E2\+D\+::\+Particle\+Factory@{P\+E2\+D\+::\+Particle\+Factory}}
+\subsubsection[{max\+Particle\+Count}]{\setlength{\rightskip}{0pt plus 5cm}int P\+E2\+D.\+Particle\+Factory.\+max\+Particle\+Count}\label{class_p_e2_d_1_1_particle_factory_a7a8905551b65537a74461cddeaaac5d3}
+
+
+The max particle count. This number of particles is created at runtime and placed in a finite pool. 
+
+\hypertarget{class_p_e2_d_1_1_particle_factory_a7431706eb3ca0363ebfa1936384fa8ca}{}\index{P\+E2\+D\+::\+Particle\+Factory@{P\+E2\+D\+::\+Particle\+Factory}!particle\+Prefab@{particle\+Prefab}}
+\index{particle\+Prefab@{particle\+Prefab}!P\+E2\+D\+::\+Particle\+Factory@{P\+E2\+D\+::\+Particle\+Factory}}
+\subsubsection[{particle\+Prefab}]{\setlength{\rightskip}{0pt plus 5cm}Game\+Object P\+E2\+D.\+Particle\+Factory.\+particle\+Prefab}\label{class_p_e2_d_1_1_particle_factory_a7431706eb3ca0363ebfa1936384fa8ca}
+
+
+Particle prefab. 
+
+
+
+\subsection{Property Documentation}
+\hypertarget{class_p_e2_d_1_1_particle_factory_a5ee02796828431320c6f8a70a8456feb}{}\index{P\+E2\+D\+::\+Particle\+Factory@{P\+E2\+D\+::\+Particle\+Factory}!instance@{instance}}
+\index{instance@{instance}!P\+E2\+D\+::\+Particle\+Factory@{P\+E2\+D\+::\+Particle\+Factory}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Particle\+Factory} P\+E2\+D.\+Particle\+Factory.\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}\label{class_p_e2_d_1_1_particle_factory_a5ee02796828431320c6f8a70a8456feb}
+
+
+Gets the instance of this class. Can be called from any script. Only one instance of a particle factory can exist in one scene. 
+
+The instance.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/robert/\+Dropbox/\+Work/\+Unity/\+Particle Effects 2\+D/\+Assets/\+P\+E2\+D/\+Scripts/\+Particles/Particle\+Factory.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,229 @@
+\hypertarget{class_p_e2_d_1_1_custom_particle_emitter}{}\section{P\+E2\+D.\+Custom\+Particle\+Emitter Class Reference}
+\label{class_p_e2_d_1_1_custom_particle_emitter}\index{P\+E2\+D.\+Custom\+Particle\+Emitter@{P\+E2\+D.\+Custom\+Particle\+Emitter}}
+
+
+Base class for \hyperlink{class_p_e2_d_1_1_particle_emitter_in_random_direction}{Particle\+Emitter\+In\+Random\+Direction} and \hyperlink{class_p_e2_d_1_1_particle_emitter_in_object_direction}{Particle\+Emitter\+In\+Object\+Direction}. Add base classes to Game\+Objects to easily create particle emitters.  
+
+
+Inheritance diagram for P\+E2\+D.\+Custom\+Particle\+Emitter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_p_e2_d_1_1_custom_particle_emitter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_ab3e25c169bd7782b2982daab30e35bb8}{Turn\+On} ()
+\begin{DoxyCompactList}\small\item\em Enables particle emission from this object. \end{DoxyCompactList}\item 
+void \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_a95849554a11e3072101bc3a74ea249af}{Turn\+Off} ()
+\begin{DoxyCompactList}\small\item\em Disables particle emission from this object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_a87bb71bb6472767b7532a19daa0d37e6}{time\+Between\+Projectile\+Release} = 0f
+\begin{DoxyCompactList}\small\item\em The time between projectile release, if equals 0 then particle is released with each call to update. \end{DoxyCompactList}\item 
+Vector2 \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_a30b68ba2956245b5e75b81aee52ef0f1}{initial\+Scale} = new Vector2 (2f, 1f)
+\begin{DoxyCompactList}\small\item\em Initial scale of the particles released. Scale is also dependent on velocity. \end{DoxyCompactList}\item 
+bool \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_a502b91bc7626becb13d2d908f8cc679d}{particles\+Enabled} = true
+\begin{DoxyCompactList}\small\item\em Turns on/off particle generation from this Game\+Object. \end{DoxyCompactList}\item 
+float \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_a9dea38f5fcd24b14763dd9d7fc26cb7a}{duration} = 90f
+\begin{DoxyCompactList}\small\item\em The maximum duration for each particle. A particles life is also dependent on velocity. \end{DoxyCompactList}\item 
+float \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_a04f3d21e5ff2436efce1e0f1a8777b03}{velocity\+Dampener} = 0.\+94f
+\begin{DoxyCompactList}\small\item\em T\+He rate at which to reduce particles velocity each time step. \end{DoxyCompactList}\item 
+float \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_aaf85215c89bfa7e36482394c042af95e}{length\+Multiplier} = 40f
+\begin{DoxyCompactList}\small\item\em The length multiplier for the particles. \end{DoxyCompactList}\item 
+\hyperlink{namespace_p_e2_d_a510b407ed8d0de3476df258ab95e1e50}{Wrap\+Around\+Type} \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_a894bcd6445f3443f1261ae98b50d097d}{wrap\+Around} = Wrap\+Around\+Type.\+None
+\begin{DoxyCompactList}\small\item\em The screen constraint type. \end{DoxyCompactList}\item 
+bool \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_a2434866e0ea2e419987a2321f2455b3c}{random\+Colour} = false
+\begin{DoxyCompactList}\small\item\em Particle will spawn as a random colour when enabled. \end{DoxyCompactList}\item 
+Color \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_a1ceaf22fc2d96bb356dfc6c86b6d2d66}{particle\+Colour}
+\begin{DoxyCompactList}\small\item\em Set the particles colour. \end{DoxyCompactList}\item 
+bool \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_ab860a5e7888aa0c849a9815e3934bc7f}{clamp\+Min\+Length}
+\begin{DoxyCompactList}\small\item\em Clamp the minimum length of a particle. \end{DoxyCompactList}\item 
+float \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_aaea8df4050265a7c0e07a35b9c9fde0e}{min\+Length}
+\begin{DoxyCompactList}\small\item\em The minimum length of a particle, only used if \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_ab860a5e7888aa0c849a9815e3934bc7f}{clamp\+Min\+Length} = true. \end{DoxyCompactList}\item 
+bool \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_a68678a550300ff27596c7d667df2d4f2}{clamp\+Max\+Length}
+\begin{DoxyCompactList}\small\item\em Clamp the maximum length of a particle. \end{DoxyCompactList}\item 
+float \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_a88aef32381d4e9931fe75769bde81beb}{max\+Length}
+\begin{DoxyCompactList}\small\item\em The minimum length of a particle, only used if \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_a68678a550300ff27596c7d667df2d4f2}{clamp\+Max\+Length} = true. \end{DoxyCompactList}\item 
+bool \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_ad533ffa87500059c24f4883b4258ef1c}{remove\+When\+Velocity\+Reaches\+Threshold}
+\begin{DoxyCompactList}\small\item\em Will remove a particle if velocity reaches a threshold. \end{DoxyCompactList}\item 
+float \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_adb6bfa354cb3cad1123ea63b6d8696b5}{custom\+Velocity\+Threshold}
+\begin{DoxyCompactList}\small\item\em The velocity at which a particle will be removed, only used if \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_ad533ffa87500059c24f4883b4258ef1c}{remove\+When\+Velocity\+Reaches\+Threshold} = true. \end{DoxyCompactList}\item 
+bool \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_a2d9f43eacfbc11f6fcfb546985ca9291}{remove\+When\+Alpha\+Reaches\+Threshold}
+\begin{DoxyCompactList}\small\item\em Will remove the particle when its alpha reaches a specified threshold. \end{DoxyCompactList}\item 
+float \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_a7bbf2eca6359446ab220db98001ca1aa}{custom\+Alpha\+Threshold}
+\begin{DoxyCompactList}\small\item\em The particles sprites alpha threshold at which a particle will be removed, only used if \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_a2d9f43eacfbc11f6fcfb546985ca9291}{remove\+When\+Alpha\+Reaches\+Threshold} = true. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_p_e2_d_1_1_custom_particle_emitter_a8acdd831f0a9826372f1364dc95bbd68}{}Color {\bfseries Get\+Random\+Colour} ()\label{class_p_e2_d_1_1_custom_particle_emitter_a8acdd831f0a9826372f1364dc95bbd68}
+
+\item 
+\hypertarget{class_p_e2_d_1_1_custom_particle_emitter_a523ecc6d970a14bf1dfe76aa1cf55060}{}abstract void {\bfseries Release\+Particle} ()\label{class_p_e2_d_1_1_custom_particle_emitter_a523ecc6d970a14bf1dfe76aa1cf55060}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_p_e2_d_1_1_custom_particle_emitter_a633106f8aa88c5d0cf798f45cd30d395}{}\hyperlink{struct_p_e2_d_1_1_particle_builder}{Particle\+Builder} {\bfseries \+\_\+cached\+State}\label{class_p_e2_d_1_1_custom_particle_emitter_a633106f8aa88c5d0cf798f45cd30d395}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for \hyperlink{class_p_e2_d_1_1_particle_emitter_in_random_direction}{Particle\+Emitter\+In\+Random\+Direction} and \hyperlink{class_p_e2_d_1_1_particle_emitter_in_object_direction}{Particle\+Emitter\+In\+Object\+Direction}. Add base classes to Game\+Objects to easily create particle emitters. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_p_e2_d_1_1_custom_particle_emitter_a95849554a11e3072101bc3a74ea249af}{}\index{P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}!Turn\+Off@{Turn\+Off}}
+\index{Turn\+Off@{Turn\+Off}!P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}}
+\subsubsection[{Turn\+Off()}]{\setlength{\rightskip}{0pt plus 5cm}void P\+E2\+D.\+Custom\+Particle\+Emitter.\+Turn\+Off (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_e2_d_1_1_custom_particle_emitter_a95849554a11e3072101bc3a74ea249af}
+
+
+Disables particle emission from this object. 
+
+\hypertarget{class_p_e2_d_1_1_custom_particle_emitter_ab3e25c169bd7782b2982daab30e35bb8}{}\index{P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}!Turn\+On@{Turn\+On}}
+\index{Turn\+On@{Turn\+On}!P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}}
+\subsubsection[{Turn\+On()}]{\setlength{\rightskip}{0pt plus 5cm}void P\+E2\+D.\+Custom\+Particle\+Emitter.\+Turn\+On (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_e2_d_1_1_custom_particle_emitter_ab3e25c169bd7782b2982daab30e35bb8}
+
+
+Enables particle emission from this object. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_p_e2_d_1_1_custom_particle_emitter_a68678a550300ff27596c7d667df2d4f2}{}\index{P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}!clamp\+Max\+Length@{clamp\+Max\+Length}}
+\index{clamp\+Max\+Length@{clamp\+Max\+Length}!P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}}
+\subsubsection[{clamp\+Max\+Length}]{\setlength{\rightskip}{0pt plus 5cm}bool P\+E2\+D.\+Custom\+Particle\+Emitter.\+clamp\+Max\+Length}\label{class_p_e2_d_1_1_custom_particle_emitter_a68678a550300ff27596c7d667df2d4f2}
+
+
+Clamp the maximum length of a particle. 
+
+\hypertarget{class_p_e2_d_1_1_custom_particle_emitter_ab860a5e7888aa0c849a9815e3934bc7f}{}\index{P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}!clamp\+Min\+Length@{clamp\+Min\+Length}}
+\index{clamp\+Min\+Length@{clamp\+Min\+Length}!P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}}
+\subsubsection[{clamp\+Min\+Length}]{\setlength{\rightskip}{0pt plus 5cm}bool P\+E2\+D.\+Custom\+Particle\+Emitter.\+clamp\+Min\+Length}\label{class_p_e2_d_1_1_custom_particle_emitter_ab860a5e7888aa0c849a9815e3934bc7f}
+
+
+Clamp the minimum length of a particle. 
+
+\hypertarget{class_p_e2_d_1_1_custom_particle_emitter_a7bbf2eca6359446ab220db98001ca1aa}{}\index{P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}!custom\+Alpha\+Threshold@{custom\+Alpha\+Threshold}}
+\index{custom\+Alpha\+Threshold@{custom\+Alpha\+Threshold}!P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}}
+\subsubsection[{custom\+Alpha\+Threshold}]{\setlength{\rightskip}{0pt plus 5cm}float P\+E2\+D.\+Custom\+Particle\+Emitter.\+custom\+Alpha\+Threshold}\label{class_p_e2_d_1_1_custom_particle_emitter_a7bbf2eca6359446ab220db98001ca1aa}
+
+
+The particles sprites alpha threshold at which a particle will be removed, only used if \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_a2d9f43eacfbc11f6fcfb546985ca9291}{remove\+When\+Alpha\+Reaches\+Threshold} = true. 
+
+\hypertarget{class_p_e2_d_1_1_custom_particle_emitter_adb6bfa354cb3cad1123ea63b6d8696b5}{}\index{P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}!custom\+Velocity\+Threshold@{custom\+Velocity\+Threshold}}
+\index{custom\+Velocity\+Threshold@{custom\+Velocity\+Threshold}!P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}}
+\subsubsection[{custom\+Velocity\+Threshold}]{\setlength{\rightskip}{0pt plus 5cm}float P\+E2\+D.\+Custom\+Particle\+Emitter.\+custom\+Velocity\+Threshold}\label{class_p_e2_d_1_1_custom_particle_emitter_adb6bfa354cb3cad1123ea63b6d8696b5}
+
+
+The velocity at which a particle will be removed, only used if \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_ad533ffa87500059c24f4883b4258ef1c}{remove\+When\+Velocity\+Reaches\+Threshold} = true. 
+
+\hypertarget{class_p_e2_d_1_1_custom_particle_emitter_a9dea38f5fcd24b14763dd9d7fc26cb7a}{}\index{P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}!duration@{duration}}
+\index{duration@{duration}!P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}}
+\subsubsection[{duration}]{\setlength{\rightskip}{0pt plus 5cm}float P\+E2\+D.\+Custom\+Particle\+Emitter.\+duration = 90f}\label{class_p_e2_d_1_1_custom_particle_emitter_a9dea38f5fcd24b14763dd9d7fc26cb7a}
+
+
+The maximum duration for each particle. A particles life is also dependent on velocity. 
+
+\hypertarget{class_p_e2_d_1_1_custom_particle_emitter_a30b68ba2956245b5e75b81aee52ef0f1}{}\index{P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}!initial\+Scale@{initial\+Scale}}
+\index{initial\+Scale@{initial\+Scale}!P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}}
+\subsubsection[{initial\+Scale}]{\setlength{\rightskip}{0pt plus 5cm}Vector2 P\+E2\+D.\+Custom\+Particle\+Emitter.\+initial\+Scale = new Vector2 (2f, 1f)}\label{class_p_e2_d_1_1_custom_particle_emitter_a30b68ba2956245b5e75b81aee52ef0f1}
+
+
+Initial scale of the particles released. Scale is also dependent on velocity. 
+
+\hypertarget{class_p_e2_d_1_1_custom_particle_emitter_aaf85215c89bfa7e36482394c042af95e}{}\index{P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}!length\+Multiplier@{length\+Multiplier}}
+\index{length\+Multiplier@{length\+Multiplier}!P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}}
+\subsubsection[{length\+Multiplier}]{\setlength{\rightskip}{0pt plus 5cm}float P\+E2\+D.\+Custom\+Particle\+Emitter.\+length\+Multiplier = 40f}\label{class_p_e2_d_1_1_custom_particle_emitter_aaf85215c89bfa7e36482394c042af95e}
+
+
+The length multiplier for the particles. 
+
+\hypertarget{class_p_e2_d_1_1_custom_particle_emitter_a88aef32381d4e9931fe75769bde81beb}{}\index{P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}!max\+Length@{max\+Length}}
+\index{max\+Length@{max\+Length}!P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}}
+\subsubsection[{max\+Length}]{\setlength{\rightskip}{0pt plus 5cm}float P\+E2\+D.\+Custom\+Particle\+Emitter.\+max\+Length}\label{class_p_e2_d_1_1_custom_particle_emitter_a88aef32381d4e9931fe75769bde81beb}
+
+
+The minimum length of a particle, only used if \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_a68678a550300ff27596c7d667df2d4f2}{clamp\+Max\+Length} = true. 
+
+\hypertarget{class_p_e2_d_1_1_custom_particle_emitter_aaea8df4050265a7c0e07a35b9c9fde0e}{}\index{P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}!min\+Length@{min\+Length}}
+\index{min\+Length@{min\+Length}!P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}}
+\subsubsection[{min\+Length}]{\setlength{\rightskip}{0pt plus 5cm}float P\+E2\+D.\+Custom\+Particle\+Emitter.\+min\+Length}\label{class_p_e2_d_1_1_custom_particle_emitter_aaea8df4050265a7c0e07a35b9c9fde0e}
+
+
+The minimum length of a particle, only used if \hyperlink{class_p_e2_d_1_1_custom_particle_emitter_ab860a5e7888aa0c849a9815e3934bc7f}{clamp\+Min\+Length} = true. 
+
+\hypertarget{class_p_e2_d_1_1_custom_particle_emitter_a1ceaf22fc2d96bb356dfc6c86b6d2d66}{}\index{P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}!particle\+Colour@{particle\+Colour}}
+\index{particle\+Colour@{particle\+Colour}!P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}}
+\subsubsection[{particle\+Colour}]{\setlength{\rightskip}{0pt plus 5cm}Color P\+E2\+D.\+Custom\+Particle\+Emitter.\+particle\+Colour}\label{class_p_e2_d_1_1_custom_particle_emitter_a1ceaf22fc2d96bb356dfc6c86b6d2d66}
+
+
+Set the particles colour. 
+
+\hypertarget{class_p_e2_d_1_1_custom_particle_emitter_a502b91bc7626becb13d2d908f8cc679d}{}\index{P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}!particles\+Enabled@{particles\+Enabled}}
+\index{particles\+Enabled@{particles\+Enabled}!P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}}
+\subsubsection[{particles\+Enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool P\+E2\+D.\+Custom\+Particle\+Emitter.\+particles\+Enabled = true}\label{class_p_e2_d_1_1_custom_particle_emitter_a502b91bc7626becb13d2d908f8cc679d}
+
+
+Turns on/off particle generation from this Game\+Object. 
+
+\hypertarget{class_p_e2_d_1_1_custom_particle_emitter_a2434866e0ea2e419987a2321f2455b3c}{}\index{P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}!random\+Colour@{random\+Colour}}
+\index{random\+Colour@{random\+Colour}!P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}}
+\subsubsection[{random\+Colour}]{\setlength{\rightskip}{0pt plus 5cm}bool P\+E2\+D.\+Custom\+Particle\+Emitter.\+random\+Colour = false}\label{class_p_e2_d_1_1_custom_particle_emitter_a2434866e0ea2e419987a2321f2455b3c}
+
+
+Particle will spawn as a random colour when enabled. 
+
+\hypertarget{class_p_e2_d_1_1_custom_particle_emitter_a2d9f43eacfbc11f6fcfb546985ca9291}{}\index{P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}!remove\+When\+Alpha\+Reaches\+Threshold@{remove\+When\+Alpha\+Reaches\+Threshold}}
+\index{remove\+When\+Alpha\+Reaches\+Threshold@{remove\+When\+Alpha\+Reaches\+Threshold}!P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}}
+\subsubsection[{remove\+When\+Alpha\+Reaches\+Threshold}]{\setlength{\rightskip}{0pt plus 5cm}bool P\+E2\+D.\+Custom\+Particle\+Emitter.\+remove\+When\+Alpha\+Reaches\+Threshold}\label{class_p_e2_d_1_1_custom_particle_emitter_a2d9f43eacfbc11f6fcfb546985ca9291}
+
+
+Will remove the particle when its alpha reaches a specified threshold. 
+
+\hypertarget{class_p_e2_d_1_1_custom_particle_emitter_ad533ffa87500059c24f4883b4258ef1c}{}\index{P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}!remove\+When\+Velocity\+Reaches\+Threshold@{remove\+When\+Velocity\+Reaches\+Threshold}}
+\index{remove\+When\+Velocity\+Reaches\+Threshold@{remove\+When\+Velocity\+Reaches\+Threshold}!P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}}
+\subsubsection[{remove\+When\+Velocity\+Reaches\+Threshold}]{\setlength{\rightskip}{0pt plus 5cm}bool P\+E2\+D.\+Custom\+Particle\+Emitter.\+remove\+When\+Velocity\+Reaches\+Threshold}\label{class_p_e2_d_1_1_custom_particle_emitter_ad533ffa87500059c24f4883b4258ef1c}
+
+
+Will remove a particle if velocity reaches a threshold. 
+
+\hypertarget{class_p_e2_d_1_1_custom_particle_emitter_a87bb71bb6472767b7532a19daa0d37e6}{}\index{P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}!time\+Between\+Projectile\+Release@{time\+Between\+Projectile\+Release}}
+\index{time\+Between\+Projectile\+Release@{time\+Between\+Projectile\+Release}!P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}}
+\subsubsection[{time\+Between\+Projectile\+Release}]{\setlength{\rightskip}{0pt plus 5cm}float P\+E2\+D.\+Custom\+Particle\+Emitter.\+time\+Between\+Projectile\+Release = 0f}\label{class_p_e2_d_1_1_custom_particle_emitter_a87bb71bb6472767b7532a19daa0d37e6}
+
+
+The time between projectile release, if equals 0 then particle is released with each call to update. 
+
+\hypertarget{class_p_e2_d_1_1_custom_particle_emitter_a04f3d21e5ff2436efce1e0f1a8777b03}{}\index{P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}!velocity\+Dampener@{velocity\+Dampener}}
+\index{velocity\+Dampener@{velocity\+Dampener}!P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}}
+\subsubsection[{velocity\+Dampener}]{\setlength{\rightskip}{0pt plus 5cm}float P\+E2\+D.\+Custom\+Particle\+Emitter.\+velocity\+Dampener = 0.\+94f}\label{class_p_e2_d_1_1_custom_particle_emitter_a04f3d21e5ff2436efce1e0f1a8777b03}
+
+
+T\+He rate at which to reduce particles velocity each time step. 
+
+\hypertarget{class_p_e2_d_1_1_custom_particle_emitter_a894bcd6445f3443f1261ae98b50d097d}{}\index{P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}!wrap\+Around@{wrap\+Around}}
+\index{wrap\+Around@{wrap\+Around}!P\+E2\+D\+::\+Custom\+Particle\+Emitter@{P\+E2\+D\+::\+Custom\+Particle\+Emitter}}
+\subsubsection[{wrap\+Around}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Wrap\+Around\+Type} P\+E2\+D.\+Custom\+Particle\+Emitter.\+wrap\+Around = Wrap\+Around\+Type.\+None}\label{class_p_e2_d_1_1_custom_particle_emitter_a894bcd6445f3443f1261ae98b50d097d}
+
+
+The screen constraint type. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/robert/\+Dropbox/\+Work/\+Unity/\+Particle Effects 2\+D/\+Assets/\+P\+E2\+D/\+Scripts/\+Particles/\+Emitters/Custom\+Particle\+Emitter.\+cs\end{DoxyCompactItemize}

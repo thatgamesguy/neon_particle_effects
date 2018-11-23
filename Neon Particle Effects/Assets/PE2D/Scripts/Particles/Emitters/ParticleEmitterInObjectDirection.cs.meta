@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: d9c588dc7caee485381c73b58f53f286
+labels:
+- Emitter
+- Particles
+- Neon
+- Line
+- Rotation
+- Rotate
+- Animated
+- Animation
+timeCreated: 1441816517
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

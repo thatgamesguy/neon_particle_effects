@@ -1,0 +1,49 @@
+
+
+
+
+
+
+
+Neon Particle Effects
+1.0
+
+If you have any questions, or suggestions for improvements, please email robert.wells@gandhigames.co.uk.
+
+Setup
+
+1. Attach ParticleFactory to a GameObject.
+a. Set Particle Prefab
+b. Set maximum number of particles based on performance and platform.
+
+2. To emit particles through GameObject:
+a. Attach either ParticleEmitterInRandomDirection or ParticleEmitterInObjectDirection to an object.
+b. You can create different particle effects by applying animation to object.
+
+-or-
+
+3. To emit particles procedurally:
+a. Call ParticleFactory.instance.CreateParticle directly and pass a ParticleBuilder. See DemoMouseController for an example.
+ 
+The demo scenes provide examples in how to create emitters, effectors and apply constraints to particles.
+
+Play around with the properties properties on ParticleEmitterInRandomDirection and ParticleEmitterInObjectDirection, and the objects animation/rotation in the particle emitter demo scene to create different effects.
+
+
+
+
+Neon Effect
+
+Available in Unity 4 pro and Unity 5 free/pro.
+
+1. Import the Effects package.
+2. Add Bloom script to camera and to replicate the setup of the web demo, copy the properties shown below. Important: for mobile devices add the BloomOptimized script instead.
+
+
+
+Note On Screen Constraint
+
+Please note that the screen constraint will not work when running within Unity and the Scene view is open and focused on the particles. 
+
+The constraint operates by checking if a particle is visible, and if it is not visible, a force is applied to move it back onto the screen. However, with the scene view open in Unity the particle may be visible even when it has gone off screen in the Game view and consequently the force to move it back onto the screen is not applied. This problem will not occur when the game has been deployed but to get around this while testing your product either hide the Scene view or move the Scene view away from the particles so they are no longer visible.
+

@@ -1,0 +1,25 @@
+var class_p_e2_d_1_1_custom_particle_emitter =
+[
+    [ "GetRandomColour", "class_p_e2_d_1_1_custom_particle_emitter.html#a8acdd831f0a9826372f1364dc95bbd68", null ],
+    [ "ReleaseParticle", "class_p_e2_d_1_1_custom_particle_emitter.html#a523ecc6d970a14bf1dfe76aa1cf55060", null ],
+    [ "TurnOff", "class_p_e2_d_1_1_custom_particle_emitter.html#a95849554a11e3072101bc3a74ea249af", null ],
+    [ "TurnOn", "class_p_e2_d_1_1_custom_particle_emitter.html#ab3e25c169bd7782b2982daab30e35bb8", null ],
+    [ "_cachedState", "class_p_e2_d_1_1_custom_particle_emitter.html#a633106f8aa88c5d0cf798f45cd30d395", null ],
+    [ "clampMaxLength", "class_p_e2_d_1_1_custom_particle_emitter.html#a68678a550300ff27596c7d667df2d4f2", null ],
+    [ "clampMinLength", "class_p_e2_d_1_1_custom_particle_emitter.html#ab860a5e7888aa0c849a9815e3934bc7f", null ],
+    [ "customAlphaThreshold", "class_p_e2_d_1_1_custom_particle_emitter.html#a7bbf2eca6359446ab220db98001ca1aa", null ],
+    [ "customVelocityThreshold", "class_p_e2_d_1_1_custom_particle_emitter.html#adb6bfa354cb3cad1123ea63b6d8696b5", null ],
+    [ "duration", "class_p_e2_d_1_1_custom_particle_emitter.html#a9dea38f5fcd24b14763dd9d7fc26cb7a", null ],
+    [ "initialScale", "class_p_e2_d_1_1_custom_particle_emitter.html#a30b68ba2956245b5e75b81aee52ef0f1", null ],
+    [ "lengthMultiplier", "class_p_e2_d_1_1_custom_particle_emitter.html#aaf85215c89bfa7e36482394c042af95e", null ],
+    [ "maxLength", "class_p_e2_d_1_1_custom_particle_emitter.html#a88aef32381d4e9931fe75769bde81beb", null ],
+    [ "minLength", "class_p_e2_d_1_1_custom_particle_emitter.html#aaea8df4050265a7c0e07a35b9c9fde0e", null ],
+    [ "particleColour", "class_p_e2_d_1_1_custom_particle_emitter.html#a1ceaf22fc2d96bb356dfc6c86b6d2d66", null ],
+    [ "particlesEnabled", "class_p_e2_d_1_1_custom_particle_emitter.html#a502b91bc7626becb13d2d908f8cc679d", null ],
+    [ "randomColour", "class_p_e2_d_1_1_custom_particle_emitter.html#a2434866e0ea2e419987a2321f2455b3c", null ],
+    [ "removeWhenAlphaReachesThreshold", "class_p_e2_d_1_1_custom_particle_emitter.html#a2d9f43eacfbc11f6fcfb546985ca9291", null ],
+    [ "removeWhenVelocityReachesThreshold", "class_p_e2_d_1_1_custom_particle_emitter.html#ad533ffa87500059c24f4883b4258ef1c", null ],
+    [ "timeBetweenProjectileRelease", "class_p_e2_d_1_1_custom_particle_emitter.html#a87bb71bb6472767b7532a19daa0d37e6", null ],
+    [ "velocityDampener", "class_p_e2_d_1_1_custom_particle_emitter.html#a04f3d21e5ff2436efce1e0f1a8777b03", null ],
+    [ "wrapAround", "class_p_e2_d_1_1_custom_particle_emitter.html#a894bcd6445f3443f1261ae98b50d097d", null ]
+];

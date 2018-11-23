@@ -1,0 +1,97 @@
+\hypertarget{class_p_e2_d_1_1_circular_array}{}\section{P\+E2\+D.\+Circular\+Array$<$ T $>$ Class Template Reference}
+\label{class_p_e2_d_1_1_circular_array}\index{P\+E2\+D.\+Circular\+Array$<$ T $>$@{P\+E2\+D.\+Circular\+Array$<$ T $>$}}
+
+
+Simplified version of the circular buffer found at\+: \href{http://geekswithblogs.net/blackrob/archive/2014/09/01/circular-buffer-in-c.aspx}{\tt http\+://geekswithblogs.\+net/blackrob/archive/2014/09/01/circular-\/buffer-\/in-\/c.\+aspx}. Generic storage, used to store particles.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_p_e2_d_1_1_circular_array_acde433a9238180ece9fc251ef05e1008}{Circular\+Array} (int capacity)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the P\+E2\+D.\+Circular\+Array`1 class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_p_e2_d_1_1_circular_array_a120928cf093724ec2a4edef5c2424469}{Start}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pointer to first entry in array. Note this will not usually be 0. \end{DoxyCompactList}\item 
+int \hyperlink{class_p_e2_d_1_1_circular_array_a7719268e9e7c8ae1c7e738d6b1e8b56f}{Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Current object count. \end{DoxyCompactList}\item 
+int \hyperlink{class_p_e2_d_1_1_circular_array_a438059cd335ad0b7ca726cc43457b4c2}{Capacity}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Total object count. \end{DoxyCompactList}\item 
+bool \hyperlink{class_p_e2_d_1_1_circular_array_a570cb7b0d5c6a0e5975ec498c6b01603}{reached\+Capacity}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating whether this P\+E2\+D.\+Circular\+Array`1 has reached capacity. \end{DoxyCompactList}\item 
+T \hyperlink{class_p_e2_d_1_1_circular_array_abdeb1c16da88d4b2d96b72ec725e7c2e}{this\mbox{[}int i\mbox{]}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the P\+E2\+D.\+Circular\+Array`1 with the specified i. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simplified version of the circular buffer found at\+: \href{http://geekswithblogs.net/blackrob/archive/2014/09/01/circular-buffer-in-c.aspx}{\tt http\+://geekswithblogs.\+net/blackrob/archive/2014/09/01/circular-\/buffer-\/in-\/c.\+aspx}. Generic storage, used to store particles. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_p_e2_d_1_1_circular_array_acde433a9238180ece9fc251ef05e1008}{}\index{P\+E2\+D\+::\+Circular\+Array@{P\+E2\+D\+::\+Circular\+Array}!Circular\+Array@{Circular\+Array}}
+\index{Circular\+Array@{Circular\+Array}!P\+E2\+D\+::\+Circular\+Array@{P\+E2\+D\+::\+Circular\+Array}}
+\subsubsection[{Circular\+Array(int capacity)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+E2\+D.\+Circular\+Array}$<$ T $>$.{\bf Circular\+Array} (
+\begin{DoxyParamCaption}
+\item[{int}]{capacity}
+\end{DoxyParamCaption}
+)}\label{class_p_e2_d_1_1_circular_array_acde433a9238180ece9fc251ef05e1008}
+
+
+Initializes a new instance of the P\+E2\+D.\+Circular\+Array`1 class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em capacity} & Capacity.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{class_p_e2_d_1_1_circular_array_a438059cd335ad0b7ca726cc43457b4c2}{}\index{P\+E2\+D\+::\+Circular\+Array@{P\+E2\+D\+::\+Circular\+Array}!Capacity@{Capacity}}
+\index{Capacity@{Capacity}!P\+E2\+D\+::\+Circular\+Array@{P\+E2\+D\+::\+Circular\+Array}}
+\subsubsection[{Capacity}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf P\+E2\+D.\+Circular\+Array}$<$ T $>$.Capacity\hspace{0.3cm}{\ttfamily [get]}}\label{class_p_e2_d_1_1_circular_array_a438059cd335ad0b7ca726cc43457b4c2}
+
+
+Total object count. 
+
+The capacity.\hypertarget{class_p_e2_d_1_1_circular_array_a7719268e9e7c8ae1c7e738d6b1e8b56f}{}\index{P\+E2\+D\+::\+Circular\+Array@{P\+E2\+D\+::\+Circular\+Array}!Count@{Count}}
+\index{Count@{Count}!P\+E2\+D\+::\+Circular\+Array@{P\+E2\+D\+::\+Circular\+Array}}
+\subsubsection[{Count}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf P\+E2\+D.\+Circular\+Array}$<$ T $>$.Count\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_p_e2_d_1_1_circular_array_a7719268e9e7c8ae1c7e738d6b1e8b56f}
+
+
+Current object count. 
+
+The count.\hypertarget{class_p_e2_d_1_1_circular_array_a570cb7b0d5c6a0e5975ec498c6b01603}{}\index{P\+E2\+D\+::\+Circular\+Array@{P\+E2\+D\+::\+Circular\+Array}!reached\+Capacity@{reached\+Capacity}}
+\index{reached\+Capacity@{reached\+Capacity}!P\+E2\+D\+::\+Circular\+Array@{P\+E2\+D\+::\+Circular\+Array}}
+\subsubsection[{reached\+Capacity}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf P\+E2\+D.\+Circular\+Array}$<$ T $>$.reached\+Capacity\hspace{0.3cm}{\ttfamily [get]}}\label{class_p_e2_d_1_1_circular_array_a570cb7b0d5c6a0e5975ec498c6b01603}
+
+
+Gets a value indicating whether this P\+E2\+D.\+Circular\+Array`1 has reached capacity. 
+
+{\ttfamily true} if reached capacity; otherwise, {\ttfamily false}.\hypertarget{class_p_e2_d_1_1_circular_array_a120928cf093724ec2a4edef5c2424469}{}\index{P\+E2\+D\+::\+Circular\+Array@{P\+E2\+D\+::\+Circular\+Array}!Start@{Start}}
+\index{Start@{Start}!P\+E2\+D\+::\+Circular\+Array@{P\+E2\+D\+::\+Circular\+Array}}
+\subsubsection[{Start}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf P\+E2\+D.\+Circular\+Array}$<$ T $>$.Start\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_p_e2_d_1_1_circular_array_a120928cf093724ec2a4edef5c2424469}
+
+
+Pointer to first entry in array. Note this will not usually be 0. 
+
+The start.\hypertarget{class_p_e2_d_1_1_circular_array_abdeb1c16da88d4b2d96b72ec725e7c2e}{}\index{P\+E2\+D\+::\+Circular\+Array@{P\+E2\+D\+::\+Circular\+Array}!this\mbox{[}int i\mbox{]}@{this[int i]}}
+\index{this\mbox{[}int i\mbox{]}@{this[int i]}!P\+E2\+D\+::\+Circular\+Array@{P\+E2\+D\+::\+Circular\+Array}}
+\subsubsection[{this[int i]}]{\setlength{\rightskip}{0pt plus 5cm}T {\bf P\+E2\+D.\+Circular\+Array}$<$ T $>$.this\mbox{[}int i\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_p_e2_d_1_1_circular_array_abdeb1c16da88d4b2d96b72ec725e7c2e}
+
+
+Gets or sets the P\+E2\+D.\+Circular\+Array`1 with the specified i. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/robert/\+Dropbox/\+Work/\+Unity/\+Particle Effects 2\+D/\+Assets/\+P\+E2\+D/\+Scripts/\+Helper/Circular\+Array.\+cs\end{DoxyCompactItemize}

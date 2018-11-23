@@ -1,0 +1,57 @@
+\hypertarget{namespace_p_e2_d}{}\section{P\+E2\+D Namespace Reference}
+\label{namespace_p_e2_d}\index{P\+E2\+D@{P\+E2\+D}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_p_e2_d_1_1_circular_array}{Circular\+Array}
+\begin{DoxyCompactList}\small\item\em Simplified version of the circular buffer found at\+: \href{http://geekswithblogs.net/blackrob/archive/2014/09/01/circular-buffer-in-c.aspx}{\tt http\+://geekswithblogs.\+net/blackrob/archive/2014/09/01/circular-\/buffer-\/in-\/c.\+aspx}. Generic storage, used to store particles. \end{DoxyCompactList}\item 
+class \hyperlink{class_p_e2_d_1_1_custom_particle}{Custom\+Particle}
+\begin{DoxyCompactList}\small\item\em Main workhorse for the custom particles. Updates particles state (colour, position, velocity etc), handles interaction with effectors, and applys any screen constraints. \end{DoxyCompactList}\item 
+class \hyperlink{class_p_e2_d_1_1_custom_particle_emitter}{Custom\+Particle\+Emitter}
+\begin{DoxyCompactList}\small\item\em Base class for \hyperlink{class_p_e2_d_1_1_particle_emitter_in_random_direction}{Particle\+Emitter\+In\+Random\+Direction} and \hyperlink{class_p_e2_d_1_1_particle_emitter_in_object_direction}{Particle\+Emitter\+In\+Object\+Direction}. Add base classes to Game\+Objects to easily create particle emitters. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_p_e2_d_1_1_particle_builder}{Particle\+Builder}
+\begin{DoxyCompactList}\small\item\em Holds the particle state. Passed to the \hyperlink{class_p_e2_d_1_1_particle_factory}{Particle\+Factory} to build particles. \end{DoxyCompactList}\item 
+class \hyperlink{class_p_e2_d_1_1_particle_effector}{Particle\+Effector}
+\begin{DoxyCompactList}\small\item\em Add to a gameobject to effect a particles movement. \end{DoxyCompactList}\item 
+class \hyperlink{class_p_e2_d_1_1_particle_emitter_in_object_direction}{Particle\+Emitter\+In\+Object\+Direction}
+\begin{DoxyCompactList}\small\item\em Emits particles based on objects rotation. \end{DoxyCompactList}\item 
+class \hyperlink{class_p_e2_d_1_1_particle_emitter_in_random_direction}{Particle\+Emitter\+In\+Random\+Direction}
+\begin{DoxyCompactList}\small\item\em Emits particles from objects position in a random direction. \end{DoxyCompactList}\item 
+class \hyperlink{class_p_e2_d_1_1_particle_factory}{Particle\+Factory}
+\begin{DoxyCompactList}\small\item\em Creates and maintain an object pool of particles. \end{DoxyCompactList}\item 
+class \hyperlink{class_p_e2_d_1_1_particle_renderer}{Particle\+Renderer}
+\begin{DoxyCompactList}\small\item\em Simple renderer script for particles that disables the sprite renderer on enable and re-\/enables the srpite renderer after a time specified by Particle\+Renderer\+::\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+D\+E\+L\+A\+Y. Attach to the particle prefab to prevent occasional graphic glitches. \end{DoxyCompactList}\item 
+class \hyperlink{class_p_e2_d_1_1_pulsate}{Pulsate}
+\begin{DoxyCompactList}\small\item\em Simple script used to pulse an objects size. Used in the demo scene for the effectors. \end{DoxyCompactList}\item 
+class {\bfseries Static\+Extensions}
+\begin{DoxyCompactList}\small\item\em Extensions for static classes. C\+Ontains a number of helper methods used throughout project. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespace_p_e2_d_a510b407ed8d0de3476df258ab95e1e50}{Wrap\+Around\+Type} \{ {\bfseries None}, 
+{\bfseries Wrap\+Around}, 
+{\bfseries Constrain}
+ \}\begin{DoxyCompactList}\small\item\em Screen constraint type. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespace_p_e2_d_a476bb8917ed61c9fea94f42486983a11}{Effector\+Type} \{ {\bfseries Attraction}, 
+{\bfseries Repel}, 
+{\bfseries Black\+Hole}
+ \}\begin{DoxyCompactList}\small\item\em Effector types. Attraction pulls particles towards object, repel pushes particles away from object, and blackhole attracts objects until a certain point and then the particle encircles the object. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{namespace_p_e2_d_a476bb8917ed61c9fea94f42486983a11}{}\index{P\+E2\+D@{P\+E2\+D}!Effector\+Type@{Effector\+Type}}
+\index{Effector\+Type@{Effector\+Type}!P\+E2\+D@{P\+E2\+D}}
+\subsubsection[{Effector\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf P\+E2\+D.\+Effector\+Type}\hspace{0.3cm}{\ttfamily [strong]}}\label{namespace_p_e2_d_a476bb8917ed61c9fea94f42486983a11}
+
+
+Effector types. Attraction pulls particles towards object, repel pushes particles away from object, and blackhole attracts objects until a certain point and then the particle encircles the object. 
+
+\hypertarget{namespace_p_e2_d_a510b407ed8d0de3476df258ab95e1e50}{}\index{P\+E2\+D@{P\+E2\+D}!Wrap\+Around\+Type@{Wrap\+Around\+Type}}
+\index{Wrap\+Around\+Type@{Wrap\+Around\+Type}!P\+E2\+D@{P\+E2\+D}}
+\subsubsection[{Wrap\+Around\+Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf P\+E2\+D.\+Wrap\+Around\+Type}\hspace{0.3cm}{\ttfamily [strong]}}\label{namespace_p_e2_d_a510b407ed8d0de3476df258ab95e1e50}
+
+
+Screen constraint type. 
+

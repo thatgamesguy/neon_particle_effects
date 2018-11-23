@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: aedd0e2be27164a6a8b6744fdf41bc93
+labels:
+- Particle
+- Particles
+- CustomParticle
+- Line
+- Neon
+- Effect
+timeCreated: 1439453257
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

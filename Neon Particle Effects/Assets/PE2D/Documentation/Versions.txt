@@ -1,0 +1,9 @@
+Versions
+
+1.0
+
+-Initial release
+
+1.1
+
+-Updated documentation to include note on screen constraints and mobile bloom 
